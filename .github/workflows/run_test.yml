@@ -5,7 +5,7 @@ on:
     inputs:
       deployment_target:
         description: select tests to run 
-        required: True
+        required: true
         type: choice
         default: all
         options:
@@ -25,7 +25,7 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: Run tests
-        run: Pytest -v 
+        run: pytest -v 
          
       
 
